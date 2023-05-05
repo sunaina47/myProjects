@@ -5,7 +5,8 @@ function validateForma(){
     name = name.trim();
 
     if(name == null || name === ""){
-        nameErr = "Name can't be blank";
+        Err = "Name can't be blank";
+        nameErr.textContent = Err;
         return false;
     }
 }
